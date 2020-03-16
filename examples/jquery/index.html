@@ -3,14 +3,13 @@
     <head>
         <title>Hyphenation example</title>
         <meta charset="utf-8">
-        <script src="jquery-1.7.1.min.js"></script>
-        <script src="../../dist/jquery.hypher.js"></script>
+        <script src="../../dist/hypher.js"></script>
         <script src="en-us.js"></script>
         <script>
-        
-            jQuery(function ($) {
-                $('p').hyphenate('en-us');
-            });
+
+            let x = window['Hypher']['languages']["en"].hyphenate('hyphenate');
+            console.log(x);
+
         </script>
     </head>
     <style>
