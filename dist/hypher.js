@@ -1,8 +1,5 @@
 (function () {
 
-var module = {
-    exports: null
-};
 /**
  * @constructor
  * @param {!{patterns: !Object, leftmin: !number, rightmin: !number}} language The language pattern file. Compatible with Hyphenator.js.
@@ -166,8 +163,8 @@ Hypher.prototype.hyphenate = function (word) {
     return result;
 };
 
-module.exports = Hypher;
-window['Hypher'] = module.exports;
+window['Hypher'] = Hypher;
 
 window['Hypher']['languages'] = {};
+
 }());
